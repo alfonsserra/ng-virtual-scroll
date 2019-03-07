@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="d-flex flex-column w-100">
+  <nav class="navbar navbar-dark bg-primary">
+    <span class="navbar-brand mb-0 h1">Virtual Scroll</span>
+  </nav>
+
+  <div class="slab-flex-1 d-flex mt-2 mb-2">
+    <cdk-virtual-scroll-viewport class="slab-flex-1" itemSize="90">
+      <ng-container *cdkVirtualFor="let n of numbers">
+        <app-sample [n]="n"></app-sample>
+      </ng-container>
+    </cdk-virtual-scroll-viewport>
+  </div>
+</div>
